@@ -4,7 +4,8 @@ A secure command line random password generator built in Python, completed as Pr
 
 About
 
-This project focuses on secure randomness and string manipulation. Instead of using Python's regular "random" module (which is predictable and not secure enough for passwords), this program uses the "secrets" module, which is the correct choice for generating passwords and security tokens.
+This project focuses on secure randomness and string manipulation. Instead of using Python's regular "random" module
+(which is predictable and not secure enough for passwords), this program uses the "secrets" module, which is the correct choice for generating passwords and security tokens.
 
 Features
 
