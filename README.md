@@ -1,36 +1,36 @@
-Password Generator  (Python Programming Project 3)
+# Password Generator
 
-A secure command line random password generator built in Python, completed as Project 3 during my Python Programming training at DecodeLabs.
+A simple command line password generator I built in Python. This was Project 3 in my Python Programming training with DecodeLabs.
 
-About
+## What it does
 
-This project focuses on secure randomness and string manipulation. Instead of using Python's regular "random" module
-(which is predictable and not secure enough for passwords), this program uses the "secrets" module, which is the correct choice for generating passwords and security tokens.
+You tell it how long you want your password to be, and it gives you a random one made of letters and numbers. If you type something silly, like a number that's too small or something that isn't a number at all, it just asks again.
 
-Features
+## Why I used `secrets` instead of `random`
 
-Asks the user for a desired password length
-Validates input - rejects lengths under 4 characters
-Validates input - rejects non-numeric entries
-Generates a secure random password using letters and digits
+My first thought was to use the `random` module, but I learned that it isn't safe for passwords because its output can be predicted. The `secrets` module is made for this exact job, so that's what I went with.
 
-Concepts Used
+## What I practiced
 
-secrets module (cryptographically secure randomness, safer than random)
-string module (string.ascii_letters, string.digits)
-String building with join() for efficiency
-Input validation with try/except
-while loop with continue and break
+- Using the `secrets` module for secure randomness
+- Using the `string` module for letters and digits
+- Building strings with `join()`
+- Handling bad input with `try/except`
+- Using a `while` loop with `continue` and `break`
 
-How to Run
+## How to run it
 
-1. Make sure you have Python installed (python.org/downloads)
-2. Clone this repository: git clone https://github.com/dayod4606-tech/password-generator-python.git
-3. Navigate into the folder: cd password-generator-python
-4. Run the program: python password_generator.py
+You'll need Python installed (you can get it at [python.org/downloads](https://www.python.org/downloads/)).
 
-Example Usage
+```bash
+git clone https://github.com/dayod4606-tech/password-generator-python.git
+cd password-generator-python
+python password_generator.py
+```
 
+## Example
+
+```text
 --- PASSWORD GENERATOR ---
 Enter password length (12): 2
 Please choose a length of at least 4.
@@ -39,9 +39,14 @@ That's not a number. Try again.
 Enter password length (12): 16
 
 Your generated password: l1eK5Ol58xsRDw95
+```
 
-Training Program
+## Things I might add later
 
-Part of the Python Programming Industrial Training  Batch 2026, powered by DecodeLabs.
+- Special characters like `!` and `#`
+- Letting the user pick which types of characters to include
+- Making sure every password has at least one letter and one number
 
-Built as part of my Python Programming learning journey.
+## About
+
+Made as part of the Python Programming Industrial Training, Batch 2026, powered by DecodeLabs.
